@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: azure;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.navbar {
+  background-color: antiquewhite;
+  padding: 25px 30px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  color: darkorange;
+}
+
+.grid-layout {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "content fasilitas"
+    "content event";
+  gap: 20px;
+}
+
+.content {
+  grid-area: content;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.card:nth-of-type(1) {
+  grid-area: fasilitas;
+}
+
+.card:nth-of-type(2) {
+  grid-area: event;
+}
+
+h2, h3, h4 {
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.hero-img,
+.content-img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+figcaption {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.media {
+  width: 100%;
+  margin: 15px 0;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.card a:hover {
+  color: darkorange;
+}
+
+footer {
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer {
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Responsive untuk Tablet */
+@media (max-width: 992px) {
+  body {
+    font-size: 17px;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .grid-layout {
+    max-width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "content"
+      "fasilitas"
+      "event";
+  }
+
+  .content,
+  .card {
+    padding: 20px;
+  }
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar {
+    padding: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .grid-layout {
+    margin: 20px auto;
+    padding: 0 15px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "content"
+      "fasilitas"
+      "event";
+  }
+
+  .content,
+  .card {
+    padding: 18px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+/* Responsive untuk HP kecil */
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .menu li a {
+    font-size: 15px;
+  }
+
+  .grid-layout {
+    padding: 0 10px;
+  }
+
+  .content,
+  .card {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3,
+  h4 {
+    font-size: 18px;
+  }
+
+  figcaption {
+    font-size: 12px;
+  }
+
+  ul,
+  ol {
+    margin-left: 18px;
+  }
+}
