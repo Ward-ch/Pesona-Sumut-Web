@@ -1,12 +1,6 @@
-/* ============================================
-   CHATBOT ENGINE - Pesona Sumut
-   Rule-based chatbot untuk wisata Sumatera Utara
-   ============================================ */
-
 (function () {
   'use strict';
 
-  // ---- Knowledge Base ----
   const knowledgeBase = [
     {
       keywords: ['halo', 'hai', 'hi', 'hey', 'hello', 'selamat', 'pagi', 'siang', 'sore', 'malam', 'assalamualaikum'],
