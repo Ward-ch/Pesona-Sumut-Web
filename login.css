@@ -141,3 +141,13 @@ footer {
   font-size: 12px;
   padding: 10px;
 }
+
+/* Hamburger putih di navbar hijau */
+.auth-page #hamburger-btn span {
+  background: white;
+}
+
+/* Navbar scroll di auth page */
+.auth-page .navbar.scrolled {
+  background: #245f30;
+}
