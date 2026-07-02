@@ -1,9 +1,3 @@
-/* ============================================
-   MAIN.JS - Pesona Sumut Enhancements
-   Fitur: Navbar scroll, Scroll reveal, 
-          Back to top, Hamburger menu
-   ============================================ */
-
 (function () {
   'use strict';
 
@@ -105,9 +99,7 @@
     });
   }
 
-  // ==============================
   // INIT SEMUA
-  // ==============================
   function init() {
     initNavbarScroll();
     initScrollReveal();
